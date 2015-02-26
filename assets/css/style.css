@@ -223,7 +223,7 @@ h1 {
   .table tr {
     cursor: pointer; }
 
-.give, .redeem, .add {
+.give, .redeem, .edit {
   background-color: #81CFE0;
   padding: 10px;
   box-shadow: none;
@@ -234,8 +234,13 @@ h1 {
   background-color: #36D7B7;
   margin: 0 20px 0 20px; }
 
-.add {
+.edit {
   background-color: #E26A6A; }
+
+.fa-plus::before,
+.fa-check::before,
+.fa-pencil::before {
+  padding-right: 5px; }
 
 /*----------------------------------- Modal ---------------------------------------*/
 .modal {

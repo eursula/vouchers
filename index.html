@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	
 	<title>Voucher Tally</title>
@@ -15,9 +16,9 @@
 		</header>
 
 		<div class="voucher-buttons flex flex-j-center">
-			<button class="give" data-modal-target="give">Give Vouchers</button>
-			<button class="redeem" data-modal-target="redeem">Redeem Vouchers</button>
-			<button class="add" data-modal-target="add">Add New Voucher</button>
+			<button class="give" data-modal-target="give"><i class="fa fa-plus"></i>Give Vouchers</button>
+			<button class="redeem" data-modal-target="redeem"><i class="fa fa-check"></i>Redeem Vouchers</button>
+			<button class="edit" data-modal-target="edit"><i class="fa fa-pencil"></i>Edit Vouchers</button>
 		</div>
 
 		<div class="modal" data-modal-name="give">
@@ -84,8 +85,8 @@
 				</div>
 			</form>
 		</div>
-		<div class="modal" data-modal-name="add">
-			<h1>Add New Voucher</h1>
+		<div class="modal" data-modal-name="edit">
+			<h1>Add-Edit-Delete Vouchers</h1>
 			<form class="form" id="form" action="">
 				<label for="name">Voucher Name:</label>
 				<input type="text" id="name">

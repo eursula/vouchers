@@ -77,11 +77,19 @@ h1{
 	margin: 0 20px 0 20px;
 }
 
-.add{
+.edit{
 	@extend .give;
 
 	background-color: #E26A6A;
 }
+
+.fa-plus::before,
+.fa-check::before,
+.fa-pencil::before{
+	padding-right: 5px;
+}
+
+
 
 
 
