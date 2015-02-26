@@ -54,6 +54,10 @@ h1{
 	tr:nth-child(even) {background: #EEEEEE}
 	tr:nth-child(odd) {background: #DADFE1}
 
+	tr{
+		cursor: pointer;
+	}
+
 }
 
 

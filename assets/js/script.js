@@ -39,5 +39,11 @@ $(function(){
 
 	})
 
+	$('tr').on("click", function() {
+    if($(this).data('href') !== undefined){
+        document.location = $(this).data('href');
+    }
+});
+
 
 })

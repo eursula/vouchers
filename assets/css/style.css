@@ -220,6 +220,8 @@ h1 {
     background: #EEEEEE; }
   .table tr:nth-child(odd) {
     background: #DADFE1; }
+  .table tr {
+    cursor: pointer; }
 
 .give, .redeem, .add {
   background-color: #81CFE0;
