@@ -5,11 +5,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 $blue: #3A539B;
 $light-blue: #22A7F0;
+$lightest-blue: #C5EFF7;
 
 body{
 	margin: 0;
-	font-family: 'Anaheim';
-	
+	font-family: 'Roboto';
+
+}
+
+h3{
+
 }
 
 .container{
@@ -54,7 +59,7 @@ h1{
 	tr:nth-child(even) {background: #EEEEEE}
 	tr:nth-child(odd) {background: #DADFE1}
 
-	tr{
+	tr td{
 		cursor: pointer;
 	}
 
@@ -85,7 +90,8 @@ h1{
 
 .fa-plus::before,
 .fa-check::before,
-.fa-pencil::before{
+.fa-pencil::before,
+.fa-arrow-left{
 	padding-right: 5px;
 }
 
@@ -135,12 +141,21 @@ h1{
 
 	input#amount{
 		width: 100px;
+		border: 1px solid #6C7A89;
 	}
 
 	select#name,
 	select#voucher{
 		font-family: 'Anaheim';
 	}
+}
+
+input[type="submit"]{
+	padding: 10px 20px 10px 20px;
+	background-color: $light-blue;
+	border: none;
+	border-radius: 2px;
+
 }
 
 .modal-bg{
@@ -170,6 +185,24 @@ h1{
 
 
 
+/*----------------------------------- Teams Page ---------------------------------------*/
+
+.contact-box{
+	margin-top: 100px;
+	padding-bottom: 40px;
+}
+
+.teams-table{
+	@extend .table;
+
+	margin-top: 10px;
+
+
+	tr td{
+		cursor: default;
+	}
+
+}
 
 
 

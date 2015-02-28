@@ -23,34 +23,35 @@
 
 		<div class="modal" data-modal-name="give">
 			<h1>Give Vouchers</h1>
-			<form class="form flex flex-j-between" id="form" action="">
-				<div class="left">
-					<label for="name">Team/Company Name:</label>
-					<select name="name" id="name">
-						<option value="one">North Shore Rugby Club</option>
-						<option value="two">Takapuna Rugby Club</option>
-					</select>
-					<label for="voucher">Voucher Type:</label>
-					<select name="voucher" id="voucher">
-						<option value="one">Player of the Day - Kids</option>
-						<option value="two">Player of the Day - Adults</option>
-						<option value="three">Random Act of Kindness</option>
-						<option value="four">Hot Rod Promo</option>
-						<option value="five">Free Loaf</option>
-						<option value="six">T-Shirts</option>
-						<option value="seven">Worker of the Month</option>
-						<option value="eight">Outstanding effort</option>
-					</select>
-				</div>
-				<div class="right">
-					<label for="amount">Amount:</label>
-					<input type="number" id="amount">
+			<form class="form" id="form" action="">
+				<div class="main-form flex flex-j-between">
+					<div class="left flex flex-column flex-end">
+						<label for="name">Team/Company Name:</label>
+						<select name="name" id="name">
+							<option value="one">North Shore Rugby Club</option>
+							<option value="two">Takapuna Rugby Club</option>
+						</select>
+						<label for="voucher">Voucher Type:</label>
+						<select name="voucher" id="voucher">
+							<option value="one">Player of the Day - Kids</option>
+							<option value="two">Player of the Day - Adults</option>
+							<option value="three">Random Act of Kindness</option>
+							<option value="four">Hot Rod Promo</option>
+							<option value="five">Free Loaf</option>
+							<option value="six">T-Shirts</option>
+							<option value="seven">Worker of the Month</option>
+							<option value="eight">Outstanding effort</option>
+						</select>
+					</div>
+					<div class="right">
+						<label for="amount">Amount:</label>
+						<input type="number" id="amount">
 
-					<label for="date">Date:</label>
-					<input type="date" id="date">
-
-					<input type="submit" id="submit" value="Submit">
+						<label for="date">Date:</label>
+						<input type="date" id="date">
+					</div>
 				</div>
+				<input type="submit" id="submit" value="Submit">
 			</form>
 		</div>
 		
@@ -106,7 +107,7 @@
 		        	<th width="150">Total Redeemed</th>
 		        	<th width="50">Percentage Returned</th>
 		        </tr>
-		        <tr data-href="http://www.google.com">
+		        <tr data-href="teams.html">
 		        	<td width="400">North Shore Rugby Club</td>
 		        	<td width="200">NSRC</td>
 		        	<td width="150">50</td>
@@ -114,21 +115,21 @@
 		        	<td width="50">15%</td>
 		        </tr>
 
-		        <tr data-href="http://www.facebook.com">
+		        <tr data-href="teams.html">
 		            <td width="400">Takapuna Rugby Club</td>
 		            <td width="200">TRC</td>
 		            <td width="150">70</td>
 		            <td width="150">20</td>
 		            <td width="50">18%</td>
 		        </tr>
-		        <tr>
+		        <tr data-href="teams.html">
 		            <td width="400">North Shore Cricket Club</td>
 		            <td width="200">NSCC</td>
 		            <td width="150">124</td>
 		            <td width="150">20</td>
 		            <td width="50">18%</td>
 		        </tr>
-		        <tr>
+		        <tr data-href="teams.html">
 		            <td width="400">North Shore Softball Club</td>
 		            <td width="200">TRC</td>
 		            <td width="150">70</td>

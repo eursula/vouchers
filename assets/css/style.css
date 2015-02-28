@@ -188,7 +188,7 @@ table {
 
 body {
   margin: 0;
-  font-family: 'Anaheim'; }
+  font-family: 'Roboto'; }
 
 .container {
   margin: 0 auto;
@@ -206,21 +206,21 @@ h1 {
   color: white;
   -webkit-font-smoothing: antialiased; }
 
-.table {
+.table, .teams-table {
   margin-top: 100px;
   background-color: #D2D7D3;
   text-align: left; }
-  .table th, .table td {
+  .table th, .teams-table th, .table td, .teams-table td {
     border: 1px solid white;
     padding: 10px; }
-  .table th {
+  .table th, .teams-table th {
     background-color: #C5EFF7;
     font-size: 1.1em; }
-  .table tr:nth-child(even) {
+  .table tr:nth-child(even), .teams-table tr:nth-child(even) {
     background: #EEEEEE; }
-  .table tr:nth-child(odd) {
+  .table tr:nth-child(odd), .teams-table tr:nth-child(odd) {
     background: #DADFE1; }
-  .table tr {
+  .table tr td, .teams-table tr td {
     cursor: pointer; }
 
 .give, .redeem, .edit {
@@ -239,7 +239,8 @@ h1 {
 
 .fa-plus::before,
 .fa-check::before,
-.fa-pencil::before {
+.fa-pencil::before,
+.fa-arrow-left {
   padding-right: 5px; }
 
 /*----------------------------------- Modal ---------------------------------------*/
@@ -277,10 +278,17 @@ h1 {
     padding: 5px;
     font-family: 'Anaheim'; }
   .modal input#amount {
-    width: 100px; }
+    width: 100px;
+    border: 1px solid #6C7A89; }
   .modal select#name,
   .modal select#voucher {
     font-family: 'Anaheim'; }
+
+input[type="submit"] {
+  padding: 10px 20px 10px 20px;
+  background-color: #22A7F0;
+  border: none;
+  border-radius: 2px; }
 
 .modal-bg {
   position: fixed;
@@ -299,6 +307,16 @@ h1 {
   user-select: none; }
 
 /*----------------------------------- Form Style ---------------------------------------*/
+/*----------------------------------- Teams Page ---------------------------------------*/
+.contact-box {
+  margin-top: 100px;
+  padding-bottom: 40px; }
+
+.teams-table {
+  margin-top: 10px; }
+  .teams-table tr td {
+    cursor: default; }
+
 /*----------------------------------- Flexbox ---------------------------------------*/
 .flex {
   display: -webkit-box;
