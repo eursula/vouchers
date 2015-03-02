@@ -188,7 +188,7 @@ table {
 
 body {
   margin: 0;
-  font-family: 'Roboto'; }
+  font-family: 'Roboto', 'Arial', 'sans-serif', 'serif'; }
 
 .container {
   margin: 0 auto;
@@ -206,21 +206,21 @@ h1 {
   color: white;
   -webkit-font-smoothing: antialiased; }
 
-.table, .teams-table {
+.table, .teams-table, .voucher-table {
   margin-top: 100px;
   background-color: #D2D7D3;
   text-align: left; }
-  .table th, .teams-table th, .table td, .teams-table td {
+  .table th, .teams-table th, .voucher-table th, .table td, .teams-table td, .voucher-table td {
     border: 1px solid white;
     padding: 10px; }
-  .table th, .teams-table th {
+  .table th, .teams-table th, .voucher-table th {
     background-color: #C5EFF7;
     font-size: 1.1em; }
-  .table tr:nth-child(even), .teams-table tr:nth-child(even) {
+  .table tr:nth-child(even), .teams-table tr:nth-child(even), .voucher-table tr:nth-child(even) {
     background: #EEEEEE; }
-  .table tr:nth-child(odd), .teams-table tr:nth-child(odd) {
+  .table tr:nth-child(odd), .teams-table tr:nth-child(odd), .voucher-table tr:nth-child(odd) {
     background: #DADFE1; }
-  .table tr td, .teams-table tr td {
+  .table tr td, .teams-table tr td, .voucher-table tr td {
     cursor: pointer; }
 
 .give, .redeem, .edit {
@@ -316,6 +316,31 @@ input[type="submit"] {
   margin-top: 10px; }
   .teams-table tr td {
     cursor: default; }
+
+a {
+  color: #1BBC9B;
+  text-decoration: none; }
+
+a:hover {
+  color: #22A7F0; }
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.voucher-table {
+  margin-top: 10px; }
+  .voucher-table th {
+    background-color: #1BBC9B; }
+
+/*----------------------------------- Footer ---------------------------------------*/
+footer {
+  margin-top: 200px;
+  height: 100px;
+  background-color: #EEEEEE;
+  margin-bottom: 0;
+  font-size: 0.7em;
+  text-align: center; }
 
 /*----------------------------------- Flexbox ---------------------------------------*/
 .flex {

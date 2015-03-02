@@ -9,7 +9,7 @@ $lightest-blue: #C5EFF7;
 
 body{
 	margin: 0;
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', 'sans-serif', 'serif';
 
 }
 
@@ -204,7 +204,41 @@ input[type="submit"]{
 
 }
 
+a{
+	color: #1BBC9B;
+	text-decoration: none;
+}
 
+a:hover{
+	color: $light-blue;
+}
+
+section{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.voucher-table{
+	@extend .table;
+
+	margin-top: 10px;
+
+	th{
+		background-color: #1BBC9B;
+	}
+}
+
+/*----------------------------------- Footer ---------------------------------------*/
+
+footer{
+	margin-top: 200px;
+	height: 100px;
+	background-color: #EEEEEE;
+	margin-bottom: 0;
+	font-size: 0.7em;
+	text-align: center;
+
+}
 
 
 
