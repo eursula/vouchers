@@ -311,9 +311,13 @@ input[type="submit"] {
 .contact-box {
   margin-top: 100px;
   padding-bottom: 40px; }
+  .contact-box h3 {
+    margin: 0px; }
   .contact-box .edit-contact {
-    padding: 5px;
-    display: inline-block; }
+    margin-left: 5px;
+    display: inline-block;
+    height: 30px;
+    width: 30px; }
 
 .teams-table {
   margin-top: 10px; }
