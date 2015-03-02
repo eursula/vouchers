@@ -223,7 +223,7 @@ h1 {
   .table tr td, .teams-table tr td, .voucher-table tr td {
     cursor: pointer; }
 
-.give, .redeem, .edit {
+.give, .redeem, .edit, .contact-box .edit-contact {
   background-color: #81CFE0;
   padding: 10px;
   box-shadow: none;
@@ -234,7 +234,7 @@ h1 {
   background-color: #36D7B7;
   margin: 0 20px 0 20px; }
 
-.edit {
+.edit, .contact-box .edit-contact {
   background-color: #E26A6A; }
 
 .fa-plus::before,
@@ -311,6 +311,9 @@ input[type="submit"] {
 .contact-box {
   margin-top: 100px;
   padding-bottom: 40px; }
+  .contact-box .edit-contact {
+    padding: 5px;
+    display: inline-block; }
 
 .teams-table {
   margin-top: 10px; }
@@ -337,10 +340,12 @@ section {
 footer {
   margin-top: 200px;
   height: 100px;
-  background-color: #EEEEEE;
+  background-color: #BFBFBF;
   margin-bottom: 0;
-  font-size: 0.7em;
-  text-align: center; }
+  font-size: 0.7em; }
+  footer p {
+    vertical-align: center;
+    padding-top: 50px; }
 
 /*----------------------------------- Flexbox ---------------------------------------*/
 .flex {

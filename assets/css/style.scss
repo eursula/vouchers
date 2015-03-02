@@ -190,6 +190,13 @@ input[type="submit"]{
 .contact-box{
 	margin-top: 100px;
 	padding-bottom: 40px;
+
+	.edit-contact{
+		@extend .edit;
+
+		padding: 5px;
+		display: inline-block;
+	}
 }
 
 .teams-table{
@@ -233,11 +240,14 @@ section{
 footer{
 	margin-top: 200px;
 	height: 100px;
-	background-color: #EEEEEE;
+	background-color: #BFBFBF;
 	margin-bottom: 0;
 	font-size: 0.7em;
-	text-align: center;
 
+	p{
+		vertical-align: center;
+		padding-top: 50px;
+	}
 }
 
 
